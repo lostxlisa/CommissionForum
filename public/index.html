@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Commission Me</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-[#e8e8e8] font-mono flex flex-col items-center justify-center min-h-screen gap-3">
+
+    <h1 class="font-bold text-4xl text-[#9740e6]">
+        Commission Me
+    </h1>
+
+    <h2 class="text-2xl text-gray-500">
+        Submit a request
+    </h2>
+
+    <div class="bg-white rounded-lg shadow-md w-96 p-6 flex flex-col gap-3">
+
+        <input id="Email" required type="email" placeholder="Email"
+            class="rounded-lg bg-[#e8e8e8] w-full h-12 p-3 focus:outline-none focus:ring-2 focus:ring-purple-400">
+
+        <input id="PhoneNumber" required type="tel" placeholder="Phone Number"
+            class="rounded-lg bg-[#e8e8e8] w-full h-12 p-3 focus:outline-none focus:ring-2 focus:ring-purple-400">
+
+        <select id="CommissionType" required class="rounded-lg bg-[#e8e8e8] w-full h-12 p-3 focus:outline-none focus:ring-2 focus:ring-purple-400">
+
+            <option disabled selected>Commission Type</option>
+            <option value="Portfolio">Portfolio</option>
+            <option value="Business Site">Business Site</option>
+            <option value="Company Site">Company Site</option>
+            <option value="Other">Other</option>
+
+        </select>
+
+        <textarea id="CommissionDetails" required placeholder="Commission Details"
+            class="rounded-lg bg-[#e8e8e8] w-full p-3 h-28 resize-none focus:outline-none focus:ring-2 focus:ring-purple-400"></textarea>
+
+        <button id="Button" class="bg-[#9740e6] text-white py-2 rounded-lg hover:opacity-90 transition">
+            Submit
+        </button>
+
+        <script src="send.js"></script>
+
+    </div>
+
+</body>
+</html>

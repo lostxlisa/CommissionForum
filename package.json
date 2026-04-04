@@ -1,0 +1,16 @@
+{
+  "name": "commissionforum",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "vercel-build": "echo hello"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.14.0",
+    "dotenv": "^17.4.0"
+  }
+}
